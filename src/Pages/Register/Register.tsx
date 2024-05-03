@@ -17,7 +17,7 @@ export default function Register() {
     resolver: zodResolver(SchemaForm),
   });
 
-  const handleSubmitData = (data: unknown) => {
+  const handleSubmitData = (data: ValidationForm) => {
     console.log(data);
   };
 
@@ -42,7 +42,7 @@ export default function Register() {
           </div>
           <div className="grid grid-cols-2 h-5">
             <div className="grid grid-rows-2 w-80 h-20">
-              <label className="text-gray-500" htmlFor="firstName">
+              <label className="text-gray-500 font-bold" htmlFor="firstName">
                 First name
               </label>
               <div className="grid grid-flow-row">
@@ -59,7 +59,7 @@ export default function Register() {
               </div>
             </div>
             <div className="grid grid-rows-2 w-80 h-20">
-              <label className="text-gray-500" htmlFor="lastName">
+              <label className="text-gray-500 font-bold" htmlFor="lastName">
                 Last Name
               </label>
               <div className="grid grid-flow-row">
@@ -77,7 +77,7 @@ export default function Register() {
             </div>
           </div>
           <div className="grid grid-cols-1 gap-2">
-            <label className="text-gray-500" htmlFor="email">
+            <label className="text-gray-500 font-bold" htmlFor="email">
               Email
             </label>
             <div className="grid grid-cols-1">
@@ -90,7 +90,7 @@ export default function Register() {
                 <p className="text-rose-500 text-sm">{errors.email.message}</p>
               )}
             </div>
-            <label className="text-gray-500" htmlFor="mobileNumber">
+            <label className="text-gray-500 font-bold" htmlFor="mobileNumber">
               Mobile Number
             </label>
             <div className="grid grid-cols-1">
@@ -105,7 +105,7 @@ export default function Register() {
                 </p>
               )}
             </div>
-            <label className="text-gray-500" htmlFor="password">
+            <label className="text-gray-500 font-bold" htmlFor="password">
               Password
             </label>
             <div className="grid grid-cols-1 gap-2">
