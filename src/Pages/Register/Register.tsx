@@ -28,11 +28,11 @@ export default function Register() {
           <img
             src={img}
             alt="garota sentada tomando café"
-            className="rounded-md"
+            className="rounded-md hidden xl:block"
           />
         </div>
         <form
-          className="bg-white w-[750px] h-[680px] p-10 rounded-md grid grid-cols-1 gap-10"
+          className="bg-white w-full md:w-[750px] h-[680px] p-10 rounded-md grid grid-cols-1 gap-10"
           onSubmit={handleSubmit(handleSubmitData)}
         >
           <div>
@@ -40,8 +40,8 @@ export default function Register() {
               Create new account!
             </h1>
           </div>
-          <div className="grid grid-cols-2 h-5">
-            <div className="grid grid-rows-2 w-80 h-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-rows-2">
               <label className="text-gray-500 font-bold" htmlFor="firstName">
                 First name
               </label>
@@ -58,7 +58,7 @@ export default function Register() {
                 )}
               </div>
             </div>
-            <div className="grid grid-rows-2 w-80 h-20">
+            <div className="grid grid-rows-2">
               <label className="text-gray-500 font-bold" htmlFor="lastName">
                 Last Name
               </label>

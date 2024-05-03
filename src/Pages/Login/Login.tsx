@@ -28,11 +28,11 @@ export default function Login() {
           <img
             src={img}
             alt="garota sentada tomando café"
-            className="rounded-md"
+            className="rounded-md hidden xl:block"
           />
         </div>
         <form
-          className="bg-white w-[650px] h-[680px] p-14 rounded-md grid grid-cols-1 gap-10"
+          className="bg-white w-full md:w-[650px] h-[680px] p-14 rounded-md grid grid-cols-1 gap-10"
           onSubmit={handleSubmit(handleSubmitData)}
         >
           <div className="self-center">
